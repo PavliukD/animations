@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    background-color: #F6F6F3;
+    
+}
+
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+span,
+input,
+textarea {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+ol {
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.animation{
+    margin: auto;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1296px;
+    height: 224px;
+    background: linear-gradient(180deg, #295DC1 0%, #5367CF 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.animation-elemnt-one{
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    transform: translateX(-100%);
+
+    transition-property: top, left;
+    transition-duration: 18000ms;
+    transition-delay: 0;
+    transition-timing-function: linear;
+
+    &.one{
+        top: -70%;
+        left: 15%;
+    }
+
+    &.two{
+        left: 36%;
+        top: -20%;
+    }
+
+    &.three{
+        left: 42%;
+        top: 20%;
+    }
+
+    &.four{
+        left: 50%;
+        top: 0%;
+    }
+
+    &.five{
+        left: 38%;
+        top: 0;
+    }
+
+    &.six{
+        left: 25%;
+        top: -45%;
+    }
+
+}
+
+.animation-elemnt-two{
+        position: absolute;
+        width: 310px;
+        height: 310px;
+        transform: translateX(100%);
+
+        transition-property: top, right;
+        transition-duration: 18000ms;
+        transition-delay: 0;
+        transition-timing-function: linear;
+
+        &.one{
+            right: 20%;
+            top: 10%;
+        }
+
+        &.two{
+            right: 35%;
+            top: -30%;
+        }
+
+        &.three{
+            right: 45%;
+            top: -60%;
+        }
+
+        &.four{
+            right: 50.2%;
+            top: -19%;
+        }
+
+        &.five{
+            right: 40%;
+            top: -55%; 
+        }
+
+        &.six{
+            right: 27%;
+            top: -5%;
+        }
+}
