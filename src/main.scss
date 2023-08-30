@@ -106,16 +106,29 @@ a {
     &.one{
         top: -70%;
         left: 15%;
+
+        @media (max-width: 768px) {
+            left: 42%;
+            top: 20%;
+        }
     }
 
     &.two{
         left: 36%;
         top: -20%;
+        @media (max-width: 768px) {
+            left: 50.75%;
+            top: 0%;
+        }
     }
 
     &.three{
         left: 42%;
         top: 20%;
+        @media (max-width: 768px) {
+            left: 38%;
+            top: 0;
+        }
     }
 
     &.four{
@@ -123,18 +136,27 @@ a {
         top: 0%;
 
         @media (max-width: 768px) {
-            left: 50.75%;
+            left: 25%;
+            top: -45%;
         }
     }
 
     &.five{
         left: 38%;
         top: 0;
+        @media (max-width: 768px) {
+            top: -70%;
+            left: 15%;
+        }
     }
 
     &.six{
         left: 25%;
         top: -45%;
+        @media (max-width: 768px) {
+            left: 36%;
+            top: -20%;
+        }
     }
 
 }
@@ -153,16 +175,28 @@ a {
         &.one{
             right: 20%;
             top: 10%;
+            @media (max-width: 768px) {
+                right: 45%;
+                top: -60%;
+            }
         }
 
         &.two{
             right: 35%;
             top: -30%;
+            @media (max-width: 768px) {
+                right: 50.75%;
+                top: -19%;
+            }
         }
 
         &.three{
             right: 45%;
             top: -60%;
+            @media (max-width: 768px) {
+                right: 40%;
+                top: -55%;
+            }
         }
 
         &.four{
@@ -170,17 +204,26 @@ a {
             top: -19%;
 
             @media (max-width: 768px) {
-                    right: 50.75%;
+                    right: 27%;
+                    top: -5%;
                 }
         }
 
         &.five{
             right: 40%;
             top: -55%; 
+            @media (max-width: 768px) {
+                right: 20%;
+                    top: 10%;
+            }
         }
 
         &.six{
             right: 27%;
             top: -5%;
+            @media (max-width: 768px) {
+                right: 35%;
+                    top: -30%;
+            }
         }
 }
