@@ -16,11 +16,13 @@ function Annimation() {
 
         let counter = 0
 
-        elOne.classList.remove(steps[counter])
+        setTimeout(() => {
+            elOne.classList.remove(steps[counter])
             elTwo.classList.remove(steps[counter])
             counter++
             elOne.classList.add(steps[counter])
             elTwo.classList.add(steps[counter])
+        }, 1000)
 
         
         setInterval(() => {
